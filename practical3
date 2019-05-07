@@ -1,0 +1,7 @@
+1 REM practical 3 - for loops and functions. Print all odd numbers between 1 and the provided number
+2 DEF FN ISODD(X) = INT(X/2) * 2
+200 INPUT "give me a number" ; n1%
+300 FOR X=1 TO n1%
+400 r1% = FN ISODD(X)
+410 IF r1%<>X THEN PRINT X
+500 NEXT X

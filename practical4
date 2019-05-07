@@ -1,0 +1,16 @@
+10 REM practical 4 - poke
+11 t1%=60
+12 t2% = t1%
+13 IF t1% <= 10 THEN t1% = t2%-1
+14 IF t1% > 10 THEN  t1% = t2% - 10
+15 IF t1% <= 0 THEN t1% = 1
+20 FOR X=1 to 16
+30 POKE 53281, X
+31 PRINT t1%
+40 T0%=TIME
+45 IF X<16 THEN r1% =1
+46 IF X>=16 THEN r1%=0
+50 IF TIME-T0%>=t1% THEN NEXT X
+60 IF r1%=1 GOTO 50
+70 IF t1% >= 1 GOTO 12
+80 PRINT "done"

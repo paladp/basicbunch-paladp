@@ -1,0 +1,8 @@
+1 REM practical one - basic printing and input
+2 PRINT "hello!"
+3 INPUT "what is your name!"; name$
+4 PRINT "your name is", name$
+5 INPUT "is that correct?"; c1$
+6 IF c1$ = "no" THEN GOTO 3
+7 PRINT "great! nice to meet you ", name$
+8 END

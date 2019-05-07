@@ -1,0 +1,19 @@
+1 REM practical two - more advanced control flow
+2 PRINT "welcome to a basic calculator"
+3 PRINT "please choose: "
+4 INPUT "addition(1) or subtraction(2)"; c1%
+5 INPUT "now enter the first number: "; n1%
+6 INPUT "now enter the second number: "; n2%
+7 IF c1%=1 THEN GOSUB 13
+8 IF c1%=2 THEN GOSUB 16
+9 INPUT "would you like to exit(1) or stay(2)"; c2%
+10 IF c2%=1 THEN END
+11 IF c2%=2 THEN GOTO 3
+12 REM start of addition
+13 s1% = n1% + n2%
+14 PRINT "the sum of your two numbers is ", s1%
+15 RETURN
+16 REM start of subtraction
+17 s1% = n1% - n2%
+18 PRINT "the difference of your two numbers is ", s1%
+19 RETURN
